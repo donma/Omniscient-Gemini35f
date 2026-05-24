@@ -38,12 +38,21 @@
 
     <!-- Header Navigation -->
     <header class="gallery-header fixed-top">
-        <div class="container-fluid px-4 py-3 d-flex align-items-center justify-content-between">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <span class="fs-4 fw-bold brand-title"><i class="bi bi-palette-fill me-2 text-primary"></i>全職設計視角</span>
-            </a>
-            
-            <a href="index.html" class="btn btn-glass rounded-pill px-3"><i class="bi bi-arrow-left me-1"></i> 返回主頁</a>
+        <div class="container-fluid px-3 px-md-4 py-2 py-md-3">
+            <div class="row align-items-center g-2">
+                <!-- Logo -->
+                <div class="col-8 col-md-6 d-flex align-items-center">
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <span class="fs-5 fw-bold brand-title"><i class="bi bi-palette-fill me-2 text-primary"></i>全職設計視角</span>
+                    </a>
+                </div>
+                <!-- Back button -->
+                <div class="col-4 col-md-6 d-flex align-items-center justify-content-end">
+                    <a href="index.html" class="btn btn-glass rounded-pill px-3 py-1 py-md-2 small">
+                        <i class="bi bi-arrow-left me-1"></i> <span class="d-none d-sm-inline">返回主頁</span><span class="d-inline d-sm-none">返回</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -53,16 +62,16 @@
         <!-- Back link -->
         <a href="index.html" class="detail-back-btn"><i class="bi bi-chevron-left"></i> 返回樣板列表</a>
 
-        <div class="row g-5">
+        <div class="row g-4 g-lg-5">
             <!-- Left: Large preview image -->
-            <div class="col-lg-7">
+            <div class="col-12 col-md-6 col-lg-7">
                 <div class="detail-img-card">
                     <img id="detailImg" src="" alt="樣板首頁完整縮圖" class="detail-main-img">
                 </div>
             </div>
 
             <!-- Right: Details card -->
-            <div class="col-lg-5">
+            <div class="col-12 col-md-6 col-lg-5">
                 <div class="detail-info-card">
                     <h1 id="detailName" class="display-6 fw-bold text-white mb-3"></h1>
                     

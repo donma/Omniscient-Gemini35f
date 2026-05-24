@@ -323,17 +323,145 @@ body {
     color: var(--accent) !important;
 }
 
-/* RWD Adjustments */
-@media (max-width: 991px) {
+/* ============================================================
+   RWD Adjustments — Mobile First
+   ============================================================ */
+
+/* Sidebar overlay backdrop (mobile) */
+.sidebar-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1019;
+    backdrop-filter: blur(2px);
+}
+.sidebar-backdrop.show {
+    display: block;
+}
+
+/* ── Large (≥992px) ── */
+@media (min-width: 992px) {
+    .gallery-wrapper {
+        margin-top: 68px;
+        min-height: calc(100vh - 68px);
+    }
+    .gallery-sidebar {
+        top: 68px;
+        height: calc(100vh - 68px);
+    }
+}
+
+/* ── Tablet & Mobile (<992px) ── */
+@media (max-width: 991.98px) {
+    /* Collapse sidebar off-screen */
     .gallery-sidebar {
         transform: translateX(-100%);
-        box-shadow: 10px 0 30px rgba(0,0,0,0.5);
+        box-shadow: 10px 0 30px rgba(0, 0, 0, 0.5);
+        top: 0;
+        height: 100vh;
+        z-index: 1025;
     }
     .gallery-sidebar.show {
         transform: translateX(0);
     }
+
+    /* Content spans full width */
     .gallery-content {
         margin-left: 0;
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1.25rem;
+    }
+
+    /* Header adjusts to compact height */
+    .gallery-wrapper {
+        margin-top: 58px;
+        min-height: calc(100vh - 58px);
+    }
+
+    /* Detail page: reduce outer padding */
+    .detail-container {
+        padding: 0 1rem;
+        margin-top: 80px;
+    }
+
+    /* Detail info card: reduce inner padding */
+    .detail-info-card {
+        padding: 1.5rem;
+    }
+
+    /* Stack image above info card on mobile */
+    .detail-img-card {
+        border-radius: 16px;
+    }
+    .detail-main-img {
+        max-height: 500px;
+    }
+
+    /* Hero banner compact */
+    .gallery-content .py-5 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+    }
+}
+
+/* ── Small Mobile (<576px) ── */
+@media (max-width: 575.98px) {
+    /* Brand title slightly smaller */
+    .brand-title {
+        font-size: 1rem !important;
+    }
+
+    /* Content even tighter */
+    .gallery-content {
+        padding: 1rem 0.875rem;
+    }
+
+    /* Detail container flush */
+    .detail-container {
+        padding: 0 0.75rem;
+        margin-top: 72px;
+    }
+
+    /* Detail info card minimal padding */
+    .detail-info-card {
+        padding: 1.25rem;
+        border-radius: 16px;
+    }
+
+    /* Template card body padding */
+    .template-body {
+        padding: 1rem;
+    }
+
+    /* Stacked buttons full-width feel */
+    .d-grid .btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 1rem;
+    }
+
+    /* Feature indicators wrap */
+    .template-features {
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    /* List pages item padding */
+    .list-pages-item {
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Badge row wraps */
+    .d-flex.gap-2.mb-4 {
+        flex-wrap: wrap;
+    }
+}
+
+/* ── Very Small (<400px) ── */
+@media (max-width: 399px) {
+    .detail-main-img {
+        max-height: 240px;
+    }
+    .gallery-sidebar {
+        width: min(280px, 90vw);
     }
 }
