@@ -226,7 +226,10 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 0.8rem;
-    color: var(--text-muted);
+    color: var(--text-light);
+}
+.template-features .text-muted {
+    color: #9ea2ae !important;
 }
 .feature-indicator {
     display: flex;
@@ -235,6 +238,12 @@ body {
 }
 .feature-indicator.active {
     color: var(--accent);
+}
+
+/* Card description — bright enough to read on dark background */
+.text-card-desc {
+    color: #c8ccd6 !important;
+    line-height: 1.65;
 }
 
 /* Detail View Styles */

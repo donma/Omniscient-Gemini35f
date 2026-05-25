@@ -3396,7 +3396,7 @@ function renderTemplates() {
                             <span class="meta-badge" style="background:#2b5c99; color:#fff;">${t.layoutFamily}</span>
                             ${extraMeta}
                         </div>
-                        <p class="text-muted small mb-3">${t.description}</p>
+                        <p class="text-card-desc small mb-3">${t.description}</p>
                         <div class="template-tags">
                             ${tagsHtml}
                         </div>
