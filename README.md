@@ -6,6 +6,8 @@
 
 使用模型為 : Gemini 3.1 pro + Gemini 3.5 Flash
 
+>[線上展示](https://donma.github.io/Omniscient-Gemini35f/fullsite-template-gallery)
+
 ---
 
 ## 🌟 核心特色
@@ -51,8 +53,7 @@ ODesignView/
 ### 1. 瀏覽樣板藝廊
 1. 將本專案下載或複製至本地。
 2. 進入 `fullsite-template-gallery/` 目錄。
-3. 雙擊開啟 [index.html](file:///D:/AI_PROJECTS/ODesignView/fullsite-template-gallery/index.html)。
-4. 您可以使用左側側邊欄，依**產業類型**、**色彩色調**、**版型結構**或**功能模組**篩選並尋找您喜愛的樣板。
+3. 您可以使用左側側邊欄，依**產業類型**、**色彩色調**、**版型結構**或**功能模組**篩選並尋找您喜愛的樣板。
 
 ### 2. 使用 AI 提示詞生成專屬網站
 1. 在藝廊中點擊您喜愛樣板的 **Prompt** 按鈕，或直接進入該樣板目錄下（例如 `templates/template-051-personal-speaker/`）開啟 `prompt.md`。
