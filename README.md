@@ -1,4 +1,4 @@
-# ODesignView - AI 網頁樣板庫 (AI Web Template Gallery)
+# Omniscient - AI 網頁樣板庫 (AI Web Template Gallery)
 
 歡迎來到 **ODesignView**！這是一個專為全職網頁設計師、前端工程師以及 AI 輔助開發者設計的**響應式網頁樣板庫**。
 
