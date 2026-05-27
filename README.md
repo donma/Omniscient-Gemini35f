@@ -6,7 +6,7 @@
 
 使用模型為 : Gemini 3.1 pro + Gemini 3.5 Flash
 
->[線上展示](https://donma.github.io/Omniscient-Gemini35f/fullsite-template-gallery)
+>[線上展示](https://donma.github.io/Omniscient-Gemini3.1-Pro/fullsite-template-gallery)
 
 ---
 
